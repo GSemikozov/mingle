@@ -246,11 +246,18 @@ body {
       display: inline-block; }
       .main-page #top-block .breadcrumbs ul li.active a {
         text-decoration: none; }
+      .main-page #top-block .breadcrumbs ul li.active span {
+        text-decoration: none; }
       .main-page #top-block .breadcrumbs ul li a {
         text-decoration: underline;
-        display: block;
+        display: inline-block;
         font-size: 13px;
         color: #ffffff; }
+      .main-page #top-block .breadcrumbs ul li span {
+        margin-left: 3px;
+        font-size: 13px;
+        text-decoration: none;
+        cursor: default; }
   .main-page #top-block .columns-wrapper {
     width: 100%;
     position: relative;
