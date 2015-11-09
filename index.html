@@ -4,17 +4,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 		<title>Mingle</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css" rel="stylesheet" />
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="build/css/style.css" type="text/css">
 	</head>
 
 <body>
-	<div class="main-page">
+	<div class="toggle-themes">
+		<button class="rounded-btn" id="grey">Grey Theme</button>
+		<button class="rounded-btn" id="blue">Blue Theme</button>
+	</div>
+	<div class="main-page grey-theme" id="main-page">
 		<nav class="navbar">
 			<div class="container">
 				<a class="logo" href="#"><img src="images/logo.png" class="img-responsive" alt=""></a>
-				<div class="navbar-collapse">
-					<ul class="navbar-nav">
+				<div class="navbar-collapse clearfix">
+					<ul class="navbar-nav navbar-left">
 						<li class="text-block"><b class="hidden-xxs">100% FREE ONLINE DATING</b> <span class="hidden-md">Completely Free Online Dating</span></li>
 					</ul>
 					<ul class="navbar-nav navbar-right hidden-extra-small">
@@ -35,10 +40,10 @@
 					</ul>
 				</div>
 				<div class="columns-wrapper clearfix">
-					<div class="text-col">
-						<h1 class="title">
+					<section class="text-col">
+						<h2 class="title">
 							Meet Singles From<br> <span>San Francisco</span>
-						</h1>
+						</h2>
 						<p>
 							Mingle2.com is a 100% free dating service. Meet thousands of single men and women from
 							<b>San Francisco</b> for FREE.
@@ -48,7 +53,7 @@
 							<b>San Francisco</b> for FREE.
 							Mingle2.com is a 100% free dating service.
 						</p>
-						<h1 class="ribbon">100% FREE ONLINE DATING</h1>
+						<h2 class="ribbon">100% FREE ONLINE DATING</h2>
 						<p>
 							Mingle2.com is a 100% free dating service. Meet thousands <br>of single men and women from
 							<b>San Francisco</b> for FREE.
@@ -57,7 +62,7 @@
 							<img src="images/people-ico.png" alt="people">
 							<span>Over 12 million members</span>
 						</div>
-					</div>
+					</section>
 					<div class="form-col">
 						<form class="form">
 							<div class="form-header">
@@ -72,18 +77,22 @@
 										</div>
 									</div>
 									<div class="form-group form-radio-wrap">
-										<label for="male1" class="custom-radio">
-											<input type="radio" name="radio" id="male1" checked>
-											<span class="radio-btn male"></span>
+										<label for="male1">
+											<span class="custom-radio">
+												<input type="radio" name="radio" id="male1" checked>
+												<span class="radio-btn male"></span>
+											</span>
+											<span>Male</span>
 										</label>
-										<span>Male</span>
 									</div>
 									<div class="form-group form-radio-wrap">
-										<label for="female1" class="custom-radio">
-											<input type="radio" name="radio" id="female1">
-											<span class="radio-btn female"></span>
+										<label for="female1">
+											<span class="custom-radio">
+												<input type="radio" name="radio" id="female1">
+												<span class="radio-btn female"></span>
+											</span>
+											<span>Female</span>
 										</label>
-										<span>Female</span>
 									</div>
 								</div>
 								<div class="form-row">
@@ -93,18 +102,22 @@
 										</div>
 									</div>
 									<div class="form-group form-radio-wrap">
-										<label for="male2" class="custom-radio">
-											<input type="radio" name="radio2" id="male2">
+										<label for="male2">
+											<span class="custom-radio">
+												<input type="radio" name="radio2" id="male2">
 											<span class="radio-btn male"></span>
+											</span>
+											<span>Male</span>
 										</label>
-										<span>Male</span>
 									</div>
 									<div class="form-group form-radio-wrap">
-										<label for="female2" class="custom-radio">
-											<input type="radio" name="radio2" id="female2" checked>
-											<span class="radio-btn female"></span>
+										<label for="female2">
+											<span class="custom-radio">
+												<input type="radio" name="radio2" id="female2" checked>
+												<span class="radio-btn female"></span>
+											</span>
+											<span>Female</span>
 										</label>
-										<span>Female</span>
 									</div>
 								</div>
 								<div class="form-row">
@@ -169,14 +182,14 @@
 			<div class="content">
 				<div class="clearfix">
 					<div class="content-inner-col">
-						<div class="user-block clearfix">
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-1.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>charles</span>, 42 year old man
+										<h3>charles</h3>, 42 year old man
 									</div>
 									<a href="#" class="rounded-btn chat-btn">San Francisco Chat Rooms</a>
 								</div>
@@ -185,15 +198,15 @@
 									Yes, I am an employee of Mingle2. We recommend that you use the Mingle2 forums or the Report Abuse form (respective URLs below) in order to get a more timely reply. I will try to answer you here,...
 								</p>
 							</div>
-						</div>
-						<div class="user-block clearfix">
+						</article>
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-2.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>RJ333</span>, 53 year old man
+										<h3>RJ333</h3>, 53 year old man
 									</div>
 									<a href="#" class="rounded-btn chat-btn">San Jose Chat Room</a>
 								</div>
@@ -202,15 +215,15 @@
 									Well lets see here, I'm a kind generous person who is thoughtful, caring and fun to be with. I've got a great sense of humor and love to laugh and make others laugh. My friends tell me I've missed...
 								</p>
 							</div>
-						</div>
-						<div class="user-block clearfix">
+						</article>
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-3.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>jeffan2000</span>, 46 year old man
+										<h3>jeffan2000</h3>, 46 year old man
 									</div>
 									<a href="#" class="rounded-btn chat-btn">Santa Rosa Chat Room</a>
 								</div>
@@ -219,15 +232,15 @@
 									Well I'm slender and toned , employed , std and HIV neg. Been single for a while and now would like to date and and find my soulmate if she's out there?
 								</p>
 							</div>
-						</div>
-						<div class="user-block clearfix">
+						</article>
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-4.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>edf6873</span>, 63 year old man
+										<h3>edf6873</h3>, 63 year old man
 									</div>
 									<a href="#" class="rounded-btn chat-btn">Free Sacramento Chatrooms</a>
 								</div>
@@ -236,15 +249,15 @@
 									Hi... Recently retired from a local hospital in a technical field, I am looking for a wonderful partner to enjoy the simple pleasures in life. No grand adventure is planned, although nothing is...
 								</p>
 							</div>
-						</div>
-						<div class="user-block clearfix">
+						</article>
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-5.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>stefiepek</span>, 37 year old woman
+										<h3>stefiepek</h3>, 37 year old woman
 									</div>
 									<a href="#" class="rounded-btn chat-btn">San Francisco Chat Rooms</a>
 								</div>
@@ -253,15 +266,15 @@
 									I'm only responding to people from the forum. Thanks
 								</p>
 							</div>
-						</div>
-						<div class="user-block clearfix">
+						</article>
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-6.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>SirZon</span>, 52 year old man
+										<h3>SirZon</h3>, 52 year old man
 									</div>
 									<a href="#" class="rounded-btn chat-btn">Mcclellan Air Force Base Singles Chat</a>
 								</div>
@@ -270,15 +283,15 @@
 									Hi...I am a laid back Dom and like keeping my life drama free. I am compassionate yet demanding, open minded and emotionally secure. I am divorced with 2 grown boys. I have an eclectic taste in...
 								</p>
 							</div>
-						</div>
-						<div class="user-block clearfix">
+						</article>
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-7.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>coliemarie</span>, 37 year old woman
+										<h3>coliemarie</h3>, 37 year old woman
 									</div>
 									<a href="#" class="rounded-btn chat-btn">Folsom Chat Rooms</a>
 								</div>
@@ -287,15 +300,15 @@
 									Hi..I'm a simple girl looking for someone who enjoys life and having fun!! Not looking for someone who plays games with people's emotions. Ideal guy would be between age 27-38.
 								</p>
 							</div>
-						</div>
-						<div class="user-block clearfix">
+						</article>
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-8.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>herekittykitty415</span>, 25 year old woman
+										<h3>herekittykitty415</h3>, 25 year old woman
 									</div>
 									<a href="#" class="rounded-btn chat-btn">San Francisco Personal Ads</a>
 								</div>
@@ -304,15 +317,15 @@
 									New on this site. Let's see!
 								</p>
 							</div>
-						</div>
-						<div class="user-block clearfix">
+						</article>
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-9.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>mcstone8511</span>, 51 year old man
+										<h3>mcstone8511</h3>, 51 year old man
 									</div>
 									<a href="#" class="rounded-btn chat-btn">Redwood City Singles</a>
 								</div>
@@ -322,15 +335,15 @@
 									relationship.
 								</p>
 							</div>
-						</div>
-						<div class="user-block clearfix">
+						</article>
+						<article class="user-block clearfix">
 							<div class="user-img">
 								<img src="images/user-10.png" alt="user">
 							</div>
 							<div class="user-info">
 								<div class="data clearfix">
 									<div class="name">
-										<span>singstooloud</span>, 39 year old man
+										<h3>singstooloud</h3>, 39 year old man
 									</div>
 									<a href="#" class="rounded-btn chat-btn">Folsom Chat Rooms</a>
 								</div>
@@ -339,20 +352,20 @@
 									Well lets see here, I'm a kind generous person who is thoughtful, caring and fun to be with. I've got a great sense of humor and love to laugh and make others laugh. My friends tell me I've missed...
 								</p>
 							</div>
-						</div>
+						</article>
 					</div>
-					<div class="banners-col hidden-xs">
+					<aside class="banners-col hidden-xs">
 						<div class="banner clearfix">
 							<img src="images/aside-baner.png" alt="banner">
 						</div>
 						<div class="banner clearfix">
 							<img src="images/aside-baner.png" alt="banner">
 						</div>
-					</div>
+					</aside>
 				</div>
 			</div>
 		</div>
-		<nav class="container">
+		<div class="container">
 			<ul class="pagination">
 				<li>
 					<a href="#" class="previous" aria-label="Previous">
@@ -377,7 +390,7 @@
 					</a>
 				</li>
 			</ul>
-		</nav>
+		</div>
 		<div class="container">
 			<div class="bottom-banner">
 				<img src="images/bottom-banner.png" alt="banner" class="img-responsive">
@@ -468,5 +481,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script src="build/js/scripts.js"></script>
 </body>
 </html>
