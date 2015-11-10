@@ -666,27 +666,29 @@ body {
 @media screen and (max-width: 1019px) {
   .hidden-md {
     display: none; }
-  .main-page #top-block .columns-wrapper {
-    width: 100%;
-    position: relative;
-    z-index: 2; }
-  .main-page #top-block .text-col {
-    float: none;
-    width: 100%; }
-    .main-page #top-block .text-col .people {
-      margin: 15px auto; }
-    .main-page #top-block .text-col p, .main-page #top-block .text-col .title {
-      text-align: center; }
-    .main-page #top-block .text-col .ribbon {
-      margin-right: 50px; }
-  .main-page #top-block .form-col {
-    width: 100%;
-    float: none;
-    margin: 0;
-    padding: 0; }
-    .main-page #top-block .form-col .form {
+  .main-page #top-block {
+    padding-bottom: 0; }
+    .main-page #top-block .columns-wrapper {
+      width: 100%;
+      position: relative;
+      z-index: 2; }
+    .main-page #top-block .text-col {
       float: none;
-      margin: 30px auto 10px; }
+      width: 100%; }
+      .main-page #top-block .text-col .people {
+        margin: 15px auto; }
+      .main-page #top-block .text-col p, .main-page #top-block .text-col .title {
+        text-align: center; }
+      .main-page #top-block .text-col .ribbon {
+        margin-right: 50px; }
+    .main-page #top-block .form-col {
+      width: 100%;
+      float: none;
+      margin: 0;
+      padding: 0; }
+      .main-page #top-block .form-col .form {
+        float: none;
+        margin: 30px auto 10px; }
   .main-page .content {
     padding: 10px; }
     .main-page .content .content-inner-col {
