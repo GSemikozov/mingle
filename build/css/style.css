@@ -224,25 +224,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0; }
-  .main-page #top-block .breadcrumbs {
-    position: relative;
-    z-index: 2; }
-    .main-page #top-block .breadcrumbs ul li {
-      display: inline-block; }
-      .main-page #top-block .breadcrumbs ul li.active a {
-        text-decoration: none; }
-      .main-page #top-block .breadcrumbs ul li.active span {
-        text-decoration: none; }
-      .main-page #top-block .breadcrumbs ul li a {
-        text-decoration: underline;
-        display: inline-block;
-        font-size: 13px;
-        color: #ffffff; }
-      .main-page #top-block .breadcrumbs ul li span {
-        margin-left: 3px;
-        font-size: 13px;
-        text-decoration: none;
-        cursor: default; }
   .main-page #top-block .columns-wrapper {
     width: 100%;
     position: relative;
@@ -250,7 +231,27 @@ body {
   .main-page #top-block .text-col {
     float: right;
     width: 45%;
-    padding: 18px 0; }
+    padding: 0 0 18px; }
+    .main-page #top-block .text-col .breadcrumbs {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 20px; }
+      .main-page #top-block .text-col .breadcrumbs ul li {
+        display: inline-block; }
+        .main-page #top-block .text-col .breadcrumbs ul li.active a {
+          text-decoration: none; }
+        .main-page #top-block .text-col .breadcrumbs ul li.active span {
+          text-decoration: none; }
+        .main-page #top-block .text-col .breadcrumbs ul li a {
+          text-decoration: underline;
+          display: inline-block;
+          font-size: 13px;
+          color: #ffffff; }
+        .main-page #top-block .text-col .breadcrumbs ul li span {
+          margin-left: 3px;
+          font-size: 13px;
+          text-decoration: none;
+          cursor: default; }
     .main-page #top-block .text-col .title {
       font-size: 24px;
       text-transform: uppercase;
@@ -708,6 +709,13 @@ body {
     padding: 0 15px; }
   .hidden-xs {
     display: none !important; }
+  .main-page #top-block {
+    padding-top: 0; }
+    .main-page #top-block .columns-wrapper .text-col .breadcrumbs {
+      margin-top: 30px;
+      text-align: center; }
+      .main-page #top-block .columns-wrapper .text-col .breadcrumbs ul {
+        display: inline-block; }
   .main-page .content {
     padding: 20px 10px; }
     .main-page .content .content-inner-col {
